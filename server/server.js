@@ -33,7 +33,7 @@ app.post("/test", function (request, response) {
 });
 app.get("/getalldata", function (request, response) {
   db.studentinfo
-    .findAll({})
+    .findAll()
     .then(function (studentinfo) {
       console.log(studentinfo);
       response.send({
